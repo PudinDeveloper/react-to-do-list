@@ -1,0 +1,25 @@
+/* Styles for the TodoButton component */
+.TodoButton {
+  background: linear-gradient(to bottom, #6c5b7b, #355c7d);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover state for the TodoButton component */
+.TodoButton:hover {
+  background: linear-gradient(to bottom, #355c7d, #6c5b7b);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Styles for the parent container */
+.container {
+  display: flex;
+  justify-content: center;
+}

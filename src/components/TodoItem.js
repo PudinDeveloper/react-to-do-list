@@ -1,21 +1,22 @@
 import React from "react";
+import "./css/TodoItem.css";
 
 function TodoItem(props) {
 	return (
-		<li>
-			<p>
-				{ props.text }
-				{ ReturnStringIfPropsCompleted(props) }
-			</p>
-		</li>
+			<li>
+				<p className="TodoItem">
+					{ ReturnStringIfPropsCompleted(props) }
+					{ props.text }
+				</p>
+			</li>
 		);
 	}
 
 	function ReturnStringIfPropsCompleted (props) {
 		if (props.completed === true) {
-			return " Completado";
+			return "✅ ";
 		} else {
-			return " No completado";
+			return "⏳ ";
 		}
 	}
 

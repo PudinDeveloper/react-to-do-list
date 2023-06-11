@@ -1,7 +1,12 @@
 import React from "react";
+import "./css/TodoButton.css";
 
 function TodoButton(props) {
-	return <button>{props.children}</button>;
+	return(
+		<div className="container">
+			<button className="TodoButton">{props.children}</button>
+		</div>
+	);
 }
 
 export { TodoButton };

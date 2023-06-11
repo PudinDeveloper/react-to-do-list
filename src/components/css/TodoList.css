@@ -1,0 +1,28 @@
+/* Styles for the TodoList component */
+.TodoList {
+  margin: 50px 100px;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .TodoList {
+    margin: 50px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .TodoList {
+    margin: 50px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .TodoList {
+    margin: 50px 200px;
+  }
+}
