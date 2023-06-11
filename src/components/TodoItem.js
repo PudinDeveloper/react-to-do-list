@@ -1,10 +1,10 @@
 import React from "react";
-import "./css/TodoItem.css";
 
 function TodoItem(props) {
 	return (
 			<li>
 				<p className="TodoItem">
+					<span>❌</span>
 					{ ReturnStringIfPropsCompleted(props) }
 					{ props.text }
 				</p>
@@ -14,9 +14,9 @@ function TodoItem(props) {
 
 	function ReturnStringIfPropsCompleted (props) {
 		if (props.completed === true) {
-			return "✅ ";
+			return <span>✅</span>;
 		} else {
-			return "⏳ ";
+			return <span key={props.index + ".icon"}>⏳</span>;
 		}
 	}
 
